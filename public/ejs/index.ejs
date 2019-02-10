@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <% include head.ejs %>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/top.css" />
+</head>
+<body>
+    <% include header.ejs %>
+    <section class="main">
+        <h2>新着キャラクター一覧</h2>
+        <% for(var i = 0; i < items.length; i++){ %>
+        <a href="/character?Number=<%- items[i].Number %>" class="a-yandere">
+        <%- include("./index-a-yandere.ejs", items[i]) %>
+        </a>
+        <% } %>
+    </section>
+    <% include side.ejs %>
+    <% include footer.ejs %>
+</body>
+</html>

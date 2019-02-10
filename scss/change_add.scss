@@ -1,0 +1,80 @@
+textarea, p{
+    width: 100%;
+}
+.fix-area{
+    padding: 0 5vw;
+    top: -11vh;
+    left: 0;
+    height: 10vh;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px gray;
+    position: fixed;
+    width: 100%;
+    transition: all 500ms 0s ease-in-out;
+}
+.fix-area i{
+    padding: 1vh 3%;
+    font-size: 8vh;
+}
+.fix-area i:hover{
+    background-color: silver;
+    text-shadow: 5px 5px 3px gray;
+}
+.settings{
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-shadow: none;
+    position: fixed;
+    top: -100vh;
+    right: 20vw;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background: linear-gradient(whitesmoke, silver);
+    box-shadow: 1px 3px 2px gray;
+    width: 30vw;
+    padding: 1vmax;
+}
+.settings_down{
+    animation-name: bainbain_down;
+    animation-play-state: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+h4{
+    font-size: 1rem;
+    margin: 0.1rem 0;
+}
+.insert_button{
+    color: #ffffff;
+    background: linear-gradient(mediumblue, midnightblue);
+    box-shadow: 3px 5px 5px dimgray; 
+    border-radius: 5px;
+    width: 40%;
+    margin: 0.5vh auto;
+    text-align: center;
+    transition: all 800ms 0s ease-in-out;
+}
+.insert_button p{
+    margin: 0.5em auto;
+}
+.insert_button:hover{
+    background: none;
+    color: black;
+    background-color: gainsboro;
+    text-shadow: 2px 4px 2px silver;
+}
+.settings_up{
+    transform: translateY(-100vh);
+}
+
+@keyframes bainbain_down {
+    40%{
+        top: 6vh;
+    }
+    80%{
+        top: 0;
+    }
+    100%{
+        top: 2.5vh;
+    }
+}

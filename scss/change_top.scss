@@ -1,0 +1,25 @@
+.button{
+    text-align: center;
+    background: #000080;
+    padding: 0.5em 3em;
+    border: solid 1px #4169e1;
+    border-radius: 0.5em;
+    box-shadow: 0 5px 2px -3px #bbbbbb;
+    color: #ffffff;
+    font-size: 2em;
+    width: 60%;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}
+.button:hover{
+    background: #0000ff;
+    text-shadow: 4px 4px 2px #aaaaaa;
+}
+h2{
+    margin-bottom: 1.25em;
+    margin-top: 1.25em
+}
+.change_top_main{
+    width: 100%;
+}

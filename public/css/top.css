@@ -1,0 +1,59 @@
+section, div {
+  display: inline-block; }
+
+.a-yandere {
+  text-decoration: none;
+  color: #000000;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-bottom: 1px dashed #000000; }
+
+.yandere-main {
+  margin-left: 10%;
+  display: table;
+  max-width: auto;
+  float: left; }
+
+.yandere-settings {
+  display: table-cell;
+  width: 40vh;
+  text-align: center;
+  vertical-align: middle; }
+
+.yandere-name {
+  font-size: 2em; }
+
+.hyoka-title {
+  margin-left: 2vh; }
+
+.star-rating, .hyoka-title {
+  display: inline; }
+
+.star-rating {
+  font-size: 1.2em;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(orange, orange), linear-gradient(gray, gray);
+  background-size: var(--rate), calc(100% - var(--rate));
+  background-position: left, right;
+  background-repeat: no-repeat; }
+
+.hyoka-comment {
+  width: 90%;
+  border: 1px solid #000000;
+  border-radius: 2em;
+  background: linear-gradient(#ffb499, #ffffff);
+  padding: 1.5em;
+  margin: 0 auto;
+  margin-top: 1vh;
+  min-height: 3.5em; }
+
+.about-yandere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; }

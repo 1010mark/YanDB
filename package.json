@@ -1,0 +1,22 @@
+{
+  "name": "sydb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "c": "gulp",
+    "start": "node main.js"
+  },
+  "engines": {
+    "node": "8.9.4"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "author": "1010mark",
+  "license": "UNLICENSED"
+}

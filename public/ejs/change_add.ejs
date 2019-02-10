@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include head.ejs %>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/character.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/change_add.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+</head>
+<body>
+    <% include header.ejs %>
+    <section class="fix-area">
+        <i class="fas fa-font"  onclick="on_click_fix_area(this)">
+            <div class="settings settings_down" id="font">
+                <h4>サイズ</h4>
+                    <p>
+                        <input type="radio" name="px">pxで指定する<br>
+                        <input type="radio" name="em" checked>相対で指定する<wbr>(普通サイズを1とする)<br>
+                        数値<input type="number" min="0">
+                    </p>
+                <h4>色</h4>
+                    <input type="color" name="color"><br>
+                <div class="insert_button"><p>挿入</p></div>
+            </div>
+        </i>
+    </section>
+    <section class="main">
+        <h2>キャラクター追加</h2>
+        <div class="about-yandere">
+            <img src="" alt="画像が設定され次第、表示される" class="yandere-main" />
+            <div class="yandere-settings">
+                <h3 class="yandere-name">Yandere</h3>
+                <p class="hyoka-title">ヤン度&#58</p><wbr><div id="yan" class="star-rating" style="--rate:0%">★★★★★</div><br>
+                <p class="hyoka-title">デレ度&#58</p><wbr><div id="dere" class="star-rating" style="--rate:0%">★★★★★</div><br>
+                <p class="hyoka-title">わがまま度&#58</p><wbr><div id="wagamama" class="star-rating" style="--rate:0%">★★★★★</div>
+            </div>
+        </div>
+        <div class="hyoka-comment">
+            <p>一言</p>
+        </div>
+        <div class="yandere-description">
+            本文
+        </div>
+    </section>
+    <section class="side">
+        <form method="post" enctype="multipart/form-data">
+            <p><input type="file" name="main_picture" value="メイン画像" onchange="change_yandere_main_picture(this)"></p>
+            <p>名前<input type="text" name="name" min="0" onkeyup="change_yandere_name(this)"></p>
+            <p>ヤン<input type="number" name="yan" min="0" onkeyup="change_yandere_settings_Number(this)" onchange="change_yandere_settings_Number(this)" required></p>
+            <p>デレ<input type="number" name="dere" min="0" onkeyup="change_yandere_settings_Number(this)" onchange="change_yandere_settings_Number(this)" required></p>
+            <p>ワガママ<input type="number" name="wagamama" min="0" onkeyup="change_yandere_settings_Number(this)" onchange="change_yandere_settings_Number(this)" required></p>
+            <p>一言<textarea name="hyoka-comment" rows="3" onkeyup="change_yandere_hyoka_comment(this)"></textarea></p>
+            <p>本文<textarea name="yandere-description" 
+                onfocus="on_mouse_textarea_of_main_sentence(this)"></textarea></p>
+        </form>
+    </section>
+    <script src="../js/compile.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include head.ejs %>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/character.css" />
+</head>
+<body>
+    <% include header.ejs %>
+    <section class="main">
+        <h2>キャラクター紹介</h2>
+        <div class="a-yandere">
+        <%- include("./index-a-yandere.ejs", return_yandere) %>
+        </div>
+        <div class="yandere-description">
+            <%- return_yandere["description"] %>
+        </div>
+    </section>
+    <% include side.ejs %>
+    <% include footer.ejs %>
+</body>
+</html>

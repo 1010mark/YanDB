@@ -1,0 +1,12 @@
+﻿<div class="about-yandere">
+    <img src="../img/<%= main_img_url %>" alt="<%= name %>" class="yandere-main" />
+    <div class="yandere-settings">
+        <h3 class="yandere-name"><%= name %></h3>
+        <p class="hyoka-title">ヤン度&#58</p><wbr><div class="star-rating" style=" --rate:calc( <%- yan %> * 20%)">★★★★★</div><br>
+        <p class="hyoka-title">デレ度&#58</p><wbr><div class="star-rating" style="--rate:calc( <%- dere %> * 20%)">★★★★★</div><br>
+        <p class="hyoka-title">わがまま度&#58</p><wbr><div class="star-rating" style="--rate:calc( <%- wagamama %> * 20%)">★★★★★</div>
+    </div>
+</div>
+<div class="hyoka-comment">
+    <p><%- hitokoto %></p>
+</div>
